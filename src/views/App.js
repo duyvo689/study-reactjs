@@ -5,6 +5,7 @@ import Nav from "./nav/nav";
 import Home from "./example/Home";
 import About from "./example/About";
 import News from "./example/News";
+import ListUser from "./Users/ListUser";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -27,6 +28,9 @@ class App extends React.Component {
               </Route>
               <Route path="/news">
                 <News />
+              </Route>
+              <Route path="/user">
+                <ListUser />
               </Route>
             </Switch>
           </header>
